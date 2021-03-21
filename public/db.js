@@ -11,7 +11,7 @@ request.onsuccess = function (event) {
   db = event.target.result;
 
   if (navigator.onLine) {
-    checkDatabase();
+    checkDB();
   }
 };
 
@@ -50,4 +50,4 @@ function checkDB() {
   };
 }
 
-window.addEventListener("online", checkDatabase);
+window.addEventListener("online", checkDB);
